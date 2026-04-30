@@ -1,0 +1,6 @@
+{
+  "name": "温室シミュレータ",
+  "description": "1時間ごとの気象データを読み込み、ハウス内の温湿度・CO2濃度をシミュレートするツールです。",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}

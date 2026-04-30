@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;800&family=JetBrains+Mono:wght@200;400;700&family=Outfit:wght@200;400;700;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Outfit", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-900 selection:bg-emerald-500/20;
+    background-image: 
+      radial-gradient(at 0% 0%, rgba(16, 185, 129, 0.03) 0px, transparent 50%),
+      radial-gradient(at 100% 0%, rgba(59, 130, 246, 0.03) 0px, transparent 50%),
+      radial-gradient(at 100% 100%, rgba(168, 85, 247, 0.03) 0px, transparent 50%),
+      radial-gradient(at 0% 100%, rgba(249, 115, 22, 0.03) 0px, transparent 50%);
+    background-attachment: fixed;
+  }
+}
+
+.glass-panel {
+  @apply bg-white border border-slate-200/60 shadow-xl shadow-slate-200/50;
+}
+
+.glass-card {
+  @apply bg-white border border-slate-100 hover:border-emerald-500/30 hover:bg-slate-50 transition-all duration-300;
+}
+
+.text-glow-emerald { text-shadow: 0 0 15px rgba(16, 185, 129, 0.2); }
+.text-glow-blue { text-shadow: 0 0 15px rgba(59, 130, 246, 0.2); }
+.text-glow-amber { text-shadow: 0 0 15px rgba(245, 158, 11, 0.2); }
+.text-glow-purple { text-shadow: 0 0 15px rgba(168, 85, 247, 0.2); }
